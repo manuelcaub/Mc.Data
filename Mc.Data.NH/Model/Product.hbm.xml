@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Mc.Data.NH" namespace="Mc.Data.NH.Model" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Product" table="Product" schema="back_example">
+    <id name="Id" type="Int32">
+      <column name="Id" not-null="true" precision="20" scale="0" sql-type="BIGINT(20)" />
+      <generator class="identity" />
+    </id>
+    <property name="Name" type="String">
+      <column name="Name" not-null="true" length="45" sql-type="VARCHAR(45)" />
+    </property>
+  </class>
+</hibernate-mapping>
